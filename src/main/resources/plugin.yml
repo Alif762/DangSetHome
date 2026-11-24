@@ -1,0 +1,31 @@
+name: DangSetHome
+version: 1.0.0
+main: my.dangsethome.DangSetHome
+api-version: "1.20"
+softdepend: [LuckPerms]
+commands:
+  dsethome:
+    description: Set a home
+    usage: /dsethome [name]
+    aliases: [dangsethome]
+  dhome:
+    description: Teleport to a home
+    usage: /dhome [name]
+  ddelhome:
+    description: Delete a home
+    usage: /ddelhome <name>
+  dhomes:
+    description: List your homes
+    usage: /dhomes
+  dhomelimit:
+    description: Set the home limit for each rank
+    usage: /dhomelimit <set|remove|list|reload>
+permissions:
+  dangsethome.use:
+    default: true
+  dangsethome.admin:
+    description: Manage home limits
+    default: op
+  dangsethome.unlimited:
+    description: Unlimited homes
+    default: false
